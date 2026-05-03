@@ -1,32 +1,95 @@
-:root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f5f5f5;
+  padding: 2rem;
 }
 
-main {
-  flex-grow: 1;
+h1 {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
-main:has(.back-link) {
-  text-align: center;
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background: #534AB7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form button:hover {
+  background: #3C3489;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 70%;
+}
+
+.word-count {
+  font-size: 13px;
+  color: #888;
+}
+
+.word-list {
+  list-style: none;
+}
+
+.word-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.word-item:last-child {
+  border-bottom: none;
+}
+
+.word-item .translation {
+  color: #534AB7;
+  font-weight: 500;
+}
+
+.word-item .delete-btn {
+  background: none;
+  border: none;
+  color: #E24B4A;
+  cursor: pointer;
+  font-size: 16px;
 }

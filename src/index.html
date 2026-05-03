@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocabulary App</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<body>
+  <div class="container">
+    <h1>Vocabulary App</h1>
+    <form class="form">
+      <input type="text" name="word" placeholder="Enter English word..." required />
+      <button type="submit">Translate & Add</button>
+    </form>
+    <div class="controls">
+      <input type="text" class="search" placeholder="Search words..." />
+      <span class="word-count">Words: 0</span>
+    </div>
+    <ul class="word-list"></ul>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
 
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
-  </body>
-</html>
+</html><h1></h1>
